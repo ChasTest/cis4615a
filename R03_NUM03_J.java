@@ -12,7 +12,6 @@ public class R03_NUM03_J {
   }
 
   public static long getInteger (DataInputStream is) throws IOException {
-    return is.readInt();// & 0xFFFFFFFFL;
-    // return is.readInt() & 0xFFFFFFFFL;
+    return is.readInt() & 0xFFFFFFFFL;
   }
 }
