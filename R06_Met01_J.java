@@ -1,11 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac R06_Met01_J.java
- *  Execution:    java R06_Met01_J
- *
- *  Calls function getAbsAdd(x,y) with legal and illegal values
- *
- ******************************************************************************/
-
 public class R06_Met01_J {
   public static void main(String[] args) {
      int a = 17;

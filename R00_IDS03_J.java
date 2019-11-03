@@ -1,10 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac R06_Met01_J.java
- *  Execution:    java R06_Met01_J
- *
- *  Calls function getAbsAdd(x,y) with legal and illegal values
- *
- ******************************************************************************/
 import java.util.logging.*;
 import java.util.regex.Pattern;
 
