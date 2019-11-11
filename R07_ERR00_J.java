@@ -2,12 +2,20 @@ import java.io.*;
 
 public class R07_ERR00_J {
   public static void main(String[] args) {
-    try {
-      File file = new File("nameOfMissingFile");
-      FileInputStream fileInputStream = new FileInputStream(file);
-      // try to open a file
-    } catch (IOException ioe) {
-      ioe.printStackTrace(); // accidentally supresses error
-    }
+    boolean validFlag = false;
+    File file;
+    FileInputStream fileInputStream;
+    do {
+      try {
+        file = new File("nameOfMissingFile");
+        fileInputStream = new FileInputStream(file);
+        validFlag = true;
+      } catch (FileNotFoundException e) {
+        System.out.println("I would ask you for a different file name here until you gave a valid one");
+        break;
+      }
+    } while (validFlag != true);
+
+    // Use the file
   }
 }
